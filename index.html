@@ -25,9 +25,9 @@
     ComfyJS.onCommand = (user, command, message, flags, extra) => {
       if (command === "yeeclaw") {
         const ferris = document.getElementById("ferris")
-        ferris.classList.add("rotate")
+        ferris.classList.add("mymove")
         setTimeout(() => {
-          ferris.classList.remove("rotate")
+          ferris.classList.remove("mymove")
         }, 1000)
       }
     }
