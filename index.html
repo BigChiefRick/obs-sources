@@ -1,0 +1,38 @@
+<!-- Inside of obs-browser-source/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If you're not OBS, Go Away</title>
+  <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+  <style>
+  .rotate {
+    animation: rotation 1s 1 linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  </style>
+</head>
+<body>
+  <img id="ferris" src="./rustacean-flat-happy.png" width="200" />
+  <script>
+    ComfyJS.onCommand = (user, command, message, flags, extra) => {
+      if (command === "yeeclaw") {
+        const ferris = document.getElementById("ferris")
+        ferris.classList.add("rotate")
+        setTimeout(() => {
+          ferris.classList.remove("rotate")
+        }, 1000)
+      }
+    }
+    ComfyJS.Init("maxcellw");
+  </script>
+</body>
+</html>
