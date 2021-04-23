@@ -135,7 +135,7 @@ var settings = {
     aTime: 6,
 
     // The delay for the animation cycle to restart in seconds
-    pauseTime: 120
+    pauseTime: 60
   }
 };
 
