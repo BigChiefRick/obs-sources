@@ -116,11 +116,11 @@
     text-indent: -10px;
   }
   50% {
-    color: #101010;
+    color: #fff000;
     text-indent: 0px;
   }
   100% {
-    color: #101010;
+    color: #fff000;
     text-indent: 0px;
   }
 }
