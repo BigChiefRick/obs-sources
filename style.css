@@ -94,7 +94,7 @@
   height: 60px;
   width: 400px;
   float: left;
-  color: #101010;
+  color: #282828;
   padding-left: 10px;
   font-size: 30px;
   line-height: 60px;
@@ -116,11 +116,11 @@
     text-indent: -10px;
   }
   50% {
-    color: #fff000;
+    color: #101010;
     text-indent: 0px;
   }
   100% {
-    color: #fff000;
+    color: #101010;
     text-indent: 0px;
   }
 }
@@ -134,7 +134,7 @@
     text-indent: -10px;
   }
   50% {
-    color: #161010;
+    color: #101010;
     text-indent: 0px;
   }
   100% {
